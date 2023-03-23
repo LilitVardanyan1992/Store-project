@@ -15,6 +15,7 @@ $trs: 0.3s;
 
 $tabletL: 1024px;
 $tabletM: 820px;
+$mobileM: 580px;
 
 
 @font-face {
@@ -139,10 +140,11 @@ nav {
         .nav__logo {
             h2 {
                 a {
-                    color: $black;
-                    text-decoration: none;
-                    font-size: 24px;
-                    font-family: "inter-bold";
+                  display: block;
+                  color: $black;
+                  text-decoration: none;
+                  font-size: 24px;
+                  font-family: "inter-bold";
                 }
             }
         }
@@ -176,6 +178,10 @@ nav {
                 }
 
             }
+        }
+
+        .mobile__menu__btn {
+          display: none;
         }
 
         .nav__icons {
@@ -227,6 +233,62 @@ nav {
                     }
                 }
             }
+        }
+
+        @media screen and (max-width: $tabletL) {
+          .nav__menu {
+            gap: 24px;
+          }
+        }
+
+        @media screen and (max-width: $tabletM) {
+          margin-top: 20px;
+          margin-bottom: 8px;
+          flex-wrap: wrap;
+          .nav__menu {
+            display: none;
+          }
+          .mobile__menu__btn {
+            display: block;
+            cursor: pointer;
+            order: 3;
+            svg {
+              rect {
+                  transition: $trs;
+              }
+            }
+        
+            &:hover {
+                svg {
+                    rect {
+                        fill: $red;
+                    }
+                }
+            }
+          }
+        }
+
+        @media screen and (max-width: $mobileM) {
+          .nav__logo {
+            width: 50%;
+            h2 {
+              text-align: right;
+            }
+          }
+          .mobile__menu__btn {
+            order: -1;
+            max-width: 50%;
+          }
+          .nav__icons {
+            max-width: 100%;
+            margin: 0 auto;
+            gap: 12px;
+            form {
+              input {
+                width: 180px;
+              }
+            }
+          }
         }
     }
 }
