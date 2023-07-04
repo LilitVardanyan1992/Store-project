@@ -13,5 +13,25 @@
     "front-end"
   ],
   "author": "WEB Group 1",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.60.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "del": "^7.0.0"
+  }
 }
