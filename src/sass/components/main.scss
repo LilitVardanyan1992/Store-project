@@ -571,7 +571,8 @@ main {
 				}
 			}
 		}
-/*
+
+		/*
 		.new__arrival {
 			.new__arrivals__items {
 				display: grid;
@@ -720,39 +721,35 @@ main {
 			}
 		}
 */
-		.opportunities__section {
+
+		.why__choose__us__section {
 			display: flex;
-			align-items: center;
 			justify-content: center;
-			gap: 100px;
+			flex-wrap: wrap;
+			gap: 88px;
+			text-align: center;
 
-			.opportunty {
+			.wcus__item__icon {
 				display: flex;
-				flex-direction: column;
-				align-items: center;
 				justify-content: center;
+				align-items: center;
+				width: fit-content;
+				padding: 20px;
+				background: $black;
+				border: 10px solid gray;
+				border-radius: 50%;
+				margin: 0px auto 24px auto;
+			}
 
+			h4 {
+				font-size: min(20px, max(10px + 2vw));
+				margin: 0;
+				font-weight: 600px;
+			}
 
-				.opportunty__icon {
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					width: 80px;
-					height: 80px;
-					border-radius: 50%;
-					background: $black;
-					border: 11px solid #a19999;
-				}
-
-				h4 {
-					font-weight: 600;
-					font-size: 20px;
-					margin: 24px 0px 8px 0px;
-				}
-
-				p {
-					font-size: 14px;
-				}
+			p {
+				margin: 8px 0px 0px 0px;
+				font-size: 14px;
 			}
 		}
 	}
